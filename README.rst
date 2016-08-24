@@ -13,7 +13,7 @@ Django Smart Spaceless
 
 **Django Smart Spaceless** is a `Django template tag <https://docs.djangoproject.com/en/1.10/howto/custom-template-tags/>`_ application for minifying block-level HTML elements only.
 
-It's just like |spaceless|_, but preserves white space between inline HTML elements. Useful for HTML where spaces directly between `<a>`, `<strong>`, and other inline elements is likely desired to be preserved. Packages the `django-htmlmin <https://github.com/cobrateam/django-htmlmin>`_ project to be used as a template tag.
+It's just like |spaceless|_, but preserves white space between inline HTML elements. Useful for HTML where spaces directly between ``<a>``, ``<strong>``, and other inline elements is likely desired to be preserved. Packages the `django-htmlmin <https://github.com/cobrateam/django-htmlmin>`_ project to be used as a template tag.
 
 .. |spaceless| replace:: ``spaceless``
 .. _spaceless: https://docs.djangoproject.com/en/1.10/ref/templates/builtins/#spaceless
@@ -57,4 +57,4 @@ Result:
 
    <p><a href="#">Link 1</a></p><p><a href="#">Link 2</a> <a href="#">Link 3</a></p>
 
-Note that the space between `<a href="#">Link 2</a>` and `<a href="#">Link 2</a>` is preserved. Removing that space would be bad.
+Note that the space between ``<a href="#">Link 2</a>`` and ``<a href="#">Link 2</a>`` is preserved. Removing that space would be bad.
