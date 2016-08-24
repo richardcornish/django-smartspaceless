@@ -6,7 +6,7 @@ from htmlmin.minify import html_minify
 register = template.Library()
 
 
-class SmartSpacelessNode(Node):
+class SmartSpacelessNode(template.Node):
     def __init__(self, nodelist):
         self.nodelist = nodelist
 
