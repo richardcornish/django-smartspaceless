@@ -57,7 +57,7 @@ Result:
 
    <p><a href="#">Link 1</a></p><p><a href="#">Link 2</a> <a href="#">Link 3</a></p>
 
-Note that the space between ``<a href="#">Link 2</a>`` and ``<a href="#">Link 2</a>`` is preserved. Removing that space would be bad.
+The space between ``<a href="#">Link 2</a>`` and ``<a href="#">Link 2</a>`` is preserved. Removing that space would be bad.
 
 Note
 ====
