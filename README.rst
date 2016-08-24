@@ -58,3 +58,8 @@ Result:
    <p><a href="#">Link 1</a></p><p><a href="#">Link 2</a> <a href="#">Link 3</a></p>
 
 Note that the space between ``<a href="#">Link 2</a>`` and ``<a href="#">Link 2</a>`` is preserved. Removing that space would be bad.
+
+Note
+====
+
+Please note that `django-htmlmin <https://github.com/cobrateam/django-htmlmin>`_ by default uses the `html5lib <https://github.com/html5lib/html5lib-python>`_ parser, which prepends possibly missing ``<html><head></head><body>`` and appends possibly missing ``</body></html>`` tags in an effort to create valid HTML. The template tag changes this default behavior to use `html.parser <https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-a-parser>`_, the HTML parser in Python's standard library, which does not alter HTML fragments.

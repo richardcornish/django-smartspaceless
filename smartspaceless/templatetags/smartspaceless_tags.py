@@ -12,7 +12,7 @@ class SmartSpacelessNode(template.Node):
 
     def render(self, context):
         output = self.nodelist.render(context)
-        return html_minify(output)
+        return html_minify(output, parser='html.parser')
 
 
 @register.tag
