@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django import template
+
 from htmlmin.minify import html_minify
 
 register = template.Library()
@@ -18,7 +19,8 @@ class SmartSpacelessNode(template.Node):
 @register.tag
 def smartspaceless(parser, token):
     """
-    Minifies HTML between ``{% smartspaceless %}`` and ``{% endsmartspaceless %}``.
+    Minifies HTML between ``{% smartspaceless %}`` and
+    ``{% endsmartspaceless %}``.
     """
     nodelist = parser.parse(('endsmartspaceless',))
     parser.delete_first_token()
