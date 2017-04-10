@@ -5,7 +5,7 @@ Usage
 
 Load the template tag in a template. Run the tag with an opening and closing tag.
 
-.. code-block:: html
+.. code-block:: django
 
    {% extends "base.html" %}
 
