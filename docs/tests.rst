@@ -10,7 +10,7 @@ However, you can also test the source code.
 .. code-block:: bash
 
    $ workon myvenv
-   $ django-admin.py test smartspaceless.tests --settings="smartspaceless.tests.settings"
+   $ django-admin test smartspaceless.tests --settings="smartspaceless.tests.settings"
    
    Creating test database for alias 'default'...
    ..........
