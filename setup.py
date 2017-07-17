@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='django-smartspaceless',
-    version='0.1.1',
+    version='0.1.2',
     description='A Django template tag application for minifying block-level HTML elements only',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     author='Richard Cornish',
